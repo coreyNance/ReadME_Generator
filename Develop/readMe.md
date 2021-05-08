@@ -1,7 +1,7 @@
-# Test render image  
+# README GENERATOR  
 
 ## Description
-seeing if I can get image to render
+The task was to create a program to be able to generate a readme using inquirer.  User is to be able to enter everything they want including the description and then be able to generate readme dynamically.  Also if user doesnt want a section, they are to not see an empty section that they dont want.  
     
 
 ## Table
@@ -60,4 +60,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-    

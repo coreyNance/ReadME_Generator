@@ -1,7 +1,7 @@
 const fs = require('fs');
 const license = require('./license');
 
-console.log(license.boost);
+// console.log(license.boost);
 var methods = {};
 
 methods.writeTitle = function(newTitle) {
@@ -187,7 +187,7 @@ methods.writeWebsite = function(newSite) {
     
 }
 
-module.exports = methods.writeLicense = function(newLicense, newName, newYear) {
+methods.writeLicense = function(newLicense, newName, newYear) {
 
     switch(newLicense) {
         case 'BOOST':

@@ -1,8 +1,6 @@
-// TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
 const methods = require('./methods.js');
-// TODO: Create an array of questions for user input
 
 const questions = [
     {
@@ -61,7 +59,11 @@ const questions = [
     }
 ];
 
-inquirer.prompt(questions)
+
+// // TODO: Create a function to initialize app
+function init() {
+
+    inquirer.prompt(questions)
 
 .then((response) => {
     console.log(response)
@@ -86,9 +88,7 @@ ${methods.data.writeCredits(response.credits)}
     
 ${methods.data.writeWebsite(response.website)}
 
-${methods.data.writeLicense(response.license, response.name, response.year)}
-    
-`,
+${methods.data.writeLicense(response.license, response.name, response.year)}`,
      'utf-8',
      info =>
      console.log('Success')
@@ -98,21 +98,7 @@ ${methods.data.writeLicense(response.license, response.name, response.year)}
 
 generateReadMe();
 });
-
-
-
-
-// // - 
-// // - 
-// // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-
-
-
 }
-
-// // TODO: Create a function to initialize app
-function init() {}
 
 // // Function call to initialize app
 init();
@@ -128,9 +114,10 @@ init();
 
 
 // find out what funciton init is all about 
-// clean up all commented code in methods.js
 // clean up all commented code in index.js
 // remember to make video of code
+// find out why its saying function boost    (Found but ask teacher how to find out what line each output is coming from)
+// add instructions on how to select table elements 
 
 
 //                                            Test to be done
