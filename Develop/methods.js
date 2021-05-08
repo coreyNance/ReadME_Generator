@@ -139,7 +139,7 @@ methods.writeScreenShot = function(newScreenshot) {
     screenshotOutput = 
     
 `## Screenshot
-![Screenshot](Develop/assets/images/prairieOne.png)
+![Screenshot](./assets/images/prairieOne.png)
 <br>  `
   }
 
@@ -180,7 +180,7 @@ methods.writeWebsite = function(newSite) {
   }
   else {
     siteOutput = `## Website
-https://coreynance.github.io/Test/Fakelink`
+  https://github.com/coreyNance/ReadME_Generator`
   }
 
   return siteOutput;

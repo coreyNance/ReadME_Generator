@@ -67,7 +67,7 @@ inquirer.prompt(questions)
     console.log(response)
     
     
-// function generateReadMe () {
+function generateReadMe () {
 
 
     fs.writeFile('readMe.md', 
@@ -94,7 +94,9 @@ ${methods.data.writeLicense(response.license, response.name, response.year)}
      console.log('Success')
      )
 
-// }
+}
+
+generateReadMe();
 });
 
 
@@ -125,12 +127,7 @@ init();
 //                                                TASKS
 
 
-// get image to render in generated readme
-// update web link to repo of this project
 // find out what funciton init is all about 
-// need to wrap generate readme into a function
-// find out what require console is on method.js
-// clean up all commented code in license.js
 // clean up all commented code in methods.js
 // clean up all commented code in index.js
 // remember to make video of code
