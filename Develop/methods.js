@@ -1,4 +1,3 @@
-const { info } = require('console');
 const fs = require('fs');
 const license = require('./license');
 
@@ -48,10 +47,9 @@ methods.writeTable = function(newTable) {
   let licenseCheck = '';
   let fullCheckList = '';
 
-  let tableOutput = '';
     
   if(newTable === '') {
-    tableOutput = '';             
+    fullCheckList = '';             
 }
 else {
   if (newTable.includes('Installation')) {
@@ -108,7 +106,7 @@ methods.writeInstall = function(newInstall) {
 
   installOutput = '';
 
-  if(newInstall === '') {
+  if(newInstall === false) {
     installOutput = '';
   }
   else {
@@ -189,17 +187,17 @@ https://coreynance.github.io/Test/Fakelink`
     
 }
 
-module.exports = methods.writeLicense = function(newLicense) {
+module.exports = methods.writeLicense = function(newLicense, newName, newYear) {
 
     switch(newLicense) {
         case 'BOOST':
-          licensePick = license.boost();
+          licensePick = license.boost(newName, newYear);
           break;
         case 'MIT':
-          licensePick = license.mit();
+          licensePick = license.mit(newName, newYear);
           break;
         case 'UNLICENSE':
-            licensePick = license.unlicense();
+            licensePick = license.unlicense(newName, newYear);
           break;
         default:
           console.log('something went wrong');

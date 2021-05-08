@@ -7,6 +7,16 @@ const methods = require('./methods.js');
 const questions = [
     {
         type: 'input',
+        message: 'What is your name First and Last (for license)',
+        name: 'name',
+    },
+    {
+        type: 'input',
+        message: 'What year is it (for license)',
+        name: 'year',
+    },
+    {
+        type: 'input',
         message: 'What is the project title?',
         name: 'title',
     },
@@ -19,12 +29,11 @@ const questions = [
         type: 'checkbox',
         message: 'What is Table of Contents?',
         name: 'table',
-        checked: true,
         choices:['Installation', 'Screenshot', 'Website', 'Credits', 'License'],
        
     },
     {
-        type: 'input',
+        type: 'confirm',
         message: 'Do you want installation instructions?',
         name: 'install',
     },
@@ -57,10 +66,6 @@ inquirer.prompt(questions)
 .then((response) => {
     console.log(response)
     
-
-    if(response.license !== '') {
-        methods.data.writeLicense(response.license);
-    }
     
 // function generateReadMe () {
 
@@ -81,7 +86,7 @@ ${methods.data.writeCredits(response.credits)}
     
 ${methods.data.writeWebsite(response.website)}
 
-${methods.data.writeLicense(response.license)}
+${methods.data.writeLicense(response.license, response.name, response.year)}
     
 `,
      'utf-8',
@@ -119,14 +124,18 @@ init();
 
 //                                                TASKS
 
-// Need to fix  questions so that they are more of what the user wants
+
 // get image to render in generated readme
 // update web link to repo of this project
 // find out what funciton init is all about 
 // need to wrap generate readme into a function
 // find out what require console is on method.js
-// need to get user name and year and feed into license 
 // clean up all commented code in license.js
 // clean up all commented code in methods.js
 // clean up all commented code in index.js
 // remember to make video of code
+
+
+//                                            Test to be done
+
+//

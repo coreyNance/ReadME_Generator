@@ -1,8 +1,10 @@
 
 module.exports = {
 
-boost: () => `## License
+boost: (licName, licYear) => `## License
 Boost Software License - Version 1.0 - August 17th, 2003
+
+Copyright (c)  ${licYear}  ${licName}
 
 Permission is hereby granted, free of charge, to any person or organization
 obtaining a copy of the software and accompanying documentation covered by
@@ -26,11 +28,11 @@ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
 ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.`,
 
-mit: ()=> `## License
+mit: (licName, licYear)=> `## License
 
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c)  ${licYear}  ${licName}
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -51,7 +53,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.`,
 
 
-unlicense:() => `## License
+unlicense:(licName, licYear) => `## License
+
+Copyright (c)  ${licYear}  ${licName}
 
 This is free and unencumbered software released into the public domain.
 
