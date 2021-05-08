@@ -156,13 +156,12 @@ methods.writeCredits = function(newCredits) {
   }
   else {
 
-  creditOutput = ` 
-  ## Credits
-  https://bootcamp.unh.edu/ 
+  creditOutput = `## Credits
+https://bootcamp.unh.edu/ 
   
-  https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
   
-  https://choosealicense.com/`
+https://choosealicense.com/`
     
 }
 

@@ -1,7 +1,7 @@
 # README GENERATOR  
 
 ## Description
-The task was to create a program to be able to generate a readme using inquirer.  User is to be able to enter everything they want including the description and then be able to generate readme dynamically.  Also if user doesnt want a section, they are to not see an empty section that they dont want.  
+The task was to create a program to be able to generate a readme using inquirer.  User is to be able to enter everything they want including the description and then be able to generate readme dynamically.  Also if user doesnt want a section, they are to not see an empty section that they dont want.  Each section of the readme is set up in different functions.
     
 
 ## Table
@@ -26,13 +26,12 @@ Once pulled over from gitHub onto your local machine.
 ![Screenshot](./assets/images/prairieOne.png)
 <br>  
 
- 
-  ## Credits
-  https://bootcamp.unh.edu/ 
+## Credits
+https://bootcamp.unh.edu/ 
   
-  https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
+https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
   
-  https://choosealicense.com/
+https://choosealicense.com/
     
 ## Website
   https://github.com/coreyNance/ReadME_Generator
