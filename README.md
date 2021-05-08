@@ -33,7 +33,7 @@ https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
   
 https://choosealicense.com/
     
-## Website
+## Repository
   https://github.com/coreyNance/ReadME_Generator
 
 
