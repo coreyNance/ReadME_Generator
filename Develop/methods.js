@@ -1,7 +1,6 @@
 const fs = require('fs');
 const license = require('./license');
 
-// console.log(license.boost);
 var methods = {};
 
 methods.writeTitle = function(newTitle) {

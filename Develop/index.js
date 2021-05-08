@@ -59,8 +59,6 @@ const questions = [
     }
 ];
 
-
-// // TODO: Create a function to initialize app
 function init() {
 
     inquirer.prompt(questions)
@@ -72,7 +70,7 @@ function init() {
 function generateReadMe () {
 
 
-    fs.writeFile('readMe.md', 
+    fs.writeFile('README.md', 
 `${methods.data.writeTitle(response.title)}  
 
 ${methods.data.writeDescription(response.description)}
@@ -100,26 +98,4 @@ generateReadMe();
 });
 }
 
-// // Function call to initialize app
 init();
-
-
-
-
-
-
-
-
-//                                                TASKS
-
-
-// find out what funciton init is all about 
-// clean up all commented code in index.js
-// remember to make video of code
-// find out why its saying function boost    (Found but ask teacher how to find out what line each output is coming from)
-// add instructions on how to select table elements 
-
-
-//                                            Test to be done
-
-//
