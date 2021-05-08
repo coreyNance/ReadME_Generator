@@ -41,16 +41,66 @@ ${newDescription}`
 
 methods.writeTable = function(newTable) {
 
+  let installCheck = '';
+  let screenShotCheck = '';
+  let websiteCheck = '';
+  let creditsCheck = '';
+  let licenseCheck = '';
+  let fullCheckList = '';
+
   let tableOutput = '';
     
   if(newTable === '') {
-    tableOutput = '';                 // need to figure out how to put table Idea is to feed each section in
+    tableOutput = '';             
 }
 else {
-  tableOutput = `## Table of Contents
-${newTable}`
+  if (newTable.includes('Installation')) {
+    installCheck = `- [Installation](#installation)`;
+  }
+  else {
+    installCheck = '';
+  }
+
+
+  if (newTable.includes('Screenshot')) {
+    screenShotCheck = `- [Screenshot](#screenshot)`;
+  }
+  else {
+    screenShotCheck = '';
+  }
+
+
+  if (newTable.includes('Website')) {
+    websiteCheck = `- [Website](#website)`;
+  }
+  else {
+    websiteCheck = '';
+  }
+
+  if (newTable.includes('Credits')) {
+    creditsCheck = `- [Credits](#credits)`;
+  }
+  else {
+    creditsCheck = '';
+  }
+
+  if (newTable.includes('License')) {
+    licenseCheck = `- [License](#license)`;
+  }
+  else {
+    licenseCheck = '';
+  }
+
+  fullCheckList = `## Table
+
+${installCheck}
+${screenShotCheck}
+${websiteCheck}
+${creditsCheck}
+${licenseCheck}`
+
 }
-  return tableOutput;
+  return fullCheckList;
 }
 
 

@@ -119,5 +119,14 @@ init();
 
 //                                                TASKS
 
-// Be able to write user picked license to readme
-//
+// Need to fix  questions so that they are more of what the user wants
+// get image to render in generated readme
+// update web link to repo of this project
+// find out what funciton init is all about 
+// need to wrap generate readme into a function
+// find out what require console is on method.js
+// need to get user name and year and feed into license 
+// clean up all commented code in license.js
+// clean up all commented code in methods.js
+// clean up all commented code in index.js
+// remember to make video of code

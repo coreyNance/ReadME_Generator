@@ -1,11 +1,16 @@
-# Remove Black spots  
+# Table test 3  
 
 ## Description
-I think I found how to get rid of the black spots
+checking how it looks with missing contents
     
 
-## Table of Contents
-Installation,Screenshot,Website,Credits,License
+## Table
+
+- [Installation](#installation)
+
+- [Website](#website)
+
+- [License](#license)
 
 ## Installation
 Once pulled over from gitHub onto your local machine.
